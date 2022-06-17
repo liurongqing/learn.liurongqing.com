@@ -1,0 +1,27 @@
+{
+  "name": "learn.henmao.com",
+  "version": "1.0.0",
+  "description": "好好学习 天天向上",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "demo1": "tutomd src/demo1 --out docs/demo1",
+    "demo2": "tutomd src/demo2 --out docs/demo2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liurongqing/learn.henmao.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liurongqing/learn.henmao.com/issues"
+  },
+  "homepage": "https://github.com/liurongqing/learn.henmao.com#readme",
+  "devDependencies": {
+    "tutomd": "^1.0.7"
+  }
+}
