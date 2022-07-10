@@ -7,6 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
+    "mongodb:ubuntu": "tutomd src/install-mongodb-on-ubuntu --out docs/install-mongodb-on-ubuntu",
     "demo1": "tutomd src/demo1 --out docs/demo1",
     "demo2": "tutomd src/demo2 --out docs/demo2"
   },
