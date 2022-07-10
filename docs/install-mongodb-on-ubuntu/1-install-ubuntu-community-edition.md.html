@@ -13,7 +13,7 @@
 
   <meta property="og:title" content="安装 MongoDB 社区版" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="" />
+  <meta property="og:image" content="./images/install.png" />
 
   <script type="text/javascript">
     // modified version of dom-confetti.
@@ -33,7 +33,7 @@
   console.log('install mongodb')
 </script>
 </head>
-<body class="line-numbers has-preview-false is-overview-false">
+<body class="line-numbers has-preview-true is-overview-false">
 
   <aside>
     <input type="checkbox" id="mobile-sidebar-opened" name="mobile-sidebar-opened" />
@@ -44,7 +44,7 @@
       <div class="contents">
         <div class="section is-overview-true">
           <div class="info">
-            <div class="thumbnail"  style="background-image: url(./images/mongodb-centos8.png); background-color: transparent;" >
+            <div class="thumbnail"  style="background-image: url(./images/mongodb.png); background-color: transparent;" >
               <div class="icon lrn_icon_finish"></div>
             </div>
             <div class="data">
@@ -57,7 +57,7 @@
         </div>
         <div class="section current is-overview-false">
           <div class="info">
-            <div class="thumbnail" >
+            <div class="thumbnail"  style="background-image: url(./images/install.png); background-color: transparent;" >
               <div class="icon lrn_icon_finish"></div>
             </div>
             <div class="data">
@@ -72,13 +72,11 @@
                   <li><a href="#%E4%B8%BA-mongodb-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%97%E8%A1%A8%E6%96%87%E4%BB%B6"><span class="num">2</span><span class="text">为 MongoDB 创建一个列表文件</span></a></li>
                   <li><a href="#%E9%87%8D%E6%96%B0%E5%8A%A0%E8%BD%BD%E6%9C%AC%E5%9C%B0%E5%8C%85%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="num">3</span><span class="text">重新加载本地包数据库</span></a></li>
                   <li><a href="#%E5%AE%89%E8%A3%85-mongodb-%E5%8C%85"><span class="num">4</span><span class="text">安装 MongoDB 包</span></a></li>
-                  <li><a href="#%E5%AE%89%E8%A3%85-mongodb-%E5%8C%85-1"><span class="num">5</span><span class="text">安装 MongoDB 包</span></a></li>
-                  <li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="num">6</span><span class="text">常见问题</span></a></li>
               </ul>
         </div>
         <div class="section is-overview-false">
           <div class="info">
-            <div class="thumbnail" >
+            <div class="thumbnail"  style="background-image: url(./images/start.png); background-color: transparent;" >
               <div class="icon lrn_icon_finish"></div>
             </div>
             <div class="data">
@@ -93,7 +91,7 @@
         </div>
         <div class="section is-overview-false">
           <div class="info">
-            <div class="thumbnail" >
+            <div class="thumbnail"  style="background-image: url(./images/clean.png); background-color: transparent;" >
               <div class="icon lrn_icon_finish"></div>
             </div>
             <div class="data">
@@ -118,7 +116,7 @@
       <div class="progress"></div>
     </div>
 
-    <header >
+    <header style="background-image: url(./images/install.png)">
       <div class="backdrop">
       </div>
     </header>
@@ -127,6 +125,7 @@
         <section class=" summary ">
           <div class="centered-content">
             <div class="summary-header">
+                <img src="./images/install.png" />
               <small><span class="icon filled-calendar"></span> July 10, 2022</small>
               <small><span class="icon filled-time"></span> 1 minute</small>
             </div>
@@ -212,78 +211,11 @@ wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add 
             <h1 id="%E5%AE%89%E8%A3%85-mongodb-%E5%8C%85" tabindex="-1">4. 安装 MongoDB 包</h1>
 <pre><code class="language-bash">sudo apt-get install -y mongodb-org
 </code></pre>
-<p>创建文件 <code>/etc/yum.repos.d/mongodb-org-5.0.repo</code></p>
-<pre><code class="language-bash">[mongodb-org-5.0]
-name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/5.0/x86_64/
-gpgcheck=1
-enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-5.0.asc
-</code></pre>
 
 
             <input type="checkbox" id="complete-%E5%AE%89%E8%A3%85-mongodb-%E5%8C%85" name="%E5%AE%89%E8%A3%85-mongodb-%E5%8C%85" />
             <div>
               <label class="button" for="complete-%E5%AE%89%E8%A3%85-mongodb-%E5%8C%85">
-                <span class="unchecked">Mark step as completed <div class="icon lrn_icon_finish"></div></span>
-                <span class="checked">Mark step as incomplete</span>
-              </label>
-
-              <div class="completion icon lrn_icon_finish"></div>
-            </div>
-          </div>
-        </section>
-
-            <div class="step-separator"></div>
-
-        <section class=" step ">
-          <div class="centered-content">
-
-            <h1 id="%E5%AE%89%E8%A3%85-mongodb-%E5%8C%85-1" tabindex="-1">5. 安装 MongoDB 包</h1>
-<p>安装 MongoDB 的最新稳定版本，使用以下命令</p>
-<pre><code class="language-bash"># 以下命令有可能会触发 - 常见问题1 常见问题2
-sudo yum install -y mongodb-org
-</code></pre>
-
-
-            <input type="checkbox" id="complete-%E5%AE%89%E8%A3%85-mongodb-%E5%8C%85-1" name="%E5%AE%89%E8%A3%85-mongodb-%E5%8C%85-1" />
-            <div>
-              <label class="button" for="complete-%E5%AE%89%E8%A3%85-mongodb-%E5%8C%85-1">
-                <span class="unchecked">Mark step as completed <div class="icon lrn_icon_finish"></div></span>
-                <span class="checked">Mark step as incomplete</span>
-              </label>
-
-              <div class="completion icon lrn_icon_finish"></div>
-            </div>
-          </div>
-        </section>
-
-            <div class="step-separator"></div>
-
-        <section class=" step ">
-          <div class="centered-content">
-
-            <h1 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" tabindex="-1">6. 常见问题</h1>
-<ol>
-<li>错误：Invalid configuration value: failovermethod=priority in /etc/yum.repos.d/CentOS-Epel.repo; 配置：ID 为 “failovermethod” 的 OptionBinding 不存在</li>
-</ol>
-<p>解决：<br>
-编辑 <code>vi /etc/yum.repos.d/CentOS-Epel.repo</code> 文件，注释掉 failovermethod=priority</p>
-<ol start="2">
-<li>错误：为仓库 ‘appstream’ 下载元数据失败 : Cannot prepare internal mirrorlist: No URLs in mirrorlist</li>
-</ol>
-<p>解决方法：</p>
-<ol>
-<li><a href="https://developer.aliyun.com/mirror/centos" target="_blank">https://developer.aliyun.com/mirror/centos</a> (我试了无效)</li>
-<li><a href="https://blog.51cto.com/u_15522232/5129674" target="_blank">https://blog.51cto.com/u_15522232/5129674</a><pre><code class="language-bash">baseurl=https://mirrors.aliyun.com/centos/$releasever-stream/extras/$basearch/os/
-</code></pre>
-</li>
-</ol>
-
-
-            <input type="checkbox" id="complete-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" name="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" />
-            <div>
-              <label class="button" for="complete-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">
                 <span class="unchecked">Mark step as completed <div class="icon lrn_icon_finish"></div></span>
                 <span class="checked">Mark step as incomplete</span>
               </label>

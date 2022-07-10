@@ -1,4 +1,4 @@
-![](./images/mongodb-centos8.png)
+![](./images/mongodb.png)
 
 # 在 Ubuntu 20 上通过 apt-get 安装 mongodb
 

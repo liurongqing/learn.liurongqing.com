@@ -1,3 +1,5 @@
+![logo](./images/start.png)
+
 # 运行 MongoDB 社区版
 
 默认文件路径  

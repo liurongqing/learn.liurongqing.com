@@ -1,3 +1,5 @@
+![logo](./images/clean.png)
+
 # 卸载 MongoDB 社区版
 
 完全删除 MongoDB 配置、数据
